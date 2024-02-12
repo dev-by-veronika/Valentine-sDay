@@ -3,7 +3,7 @@ let yesButton2 = document.getElementById('yesButton2');
 let noButton = document.getElementById('noButton');
 let texts = ['yes!!', 'definitely', 'of course', 'exactly yes', 'hundred percent'];
 let clickCount = 0;
-
+    
 function goToResultPage() {
   window.location.href = 'result.html';
 }
@@ -31,3 +31,4 @@ noButton.addEventListener('click', function() {
     noButton.style.display = 'none';
   }
 });
+
