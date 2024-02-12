@@ -1,0 +1,274 @@
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 800;
+  src: url(font/Nunito-Bold-700.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+h1 {
+  font-family: Nunito;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-image: url(background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: Nunito;
+  font-size: 1vmin;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-2 {
+  position: relative;
+  top: 0vmin;
+}
+
+.envelope {
+  position: relative;
+  background: #e88da5;
+  height: 30vmin;
+  width: 47.9vmin;
+}
+
+.card {
+  position: absolute;
+  background: white;
+  height: 25vmin;
+  width: 43vmin;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  left: 2.5vmin;
+  top: 0vmin;
+  animation: slide-rev 0.3s ease-out;
+}
+
+.message {
+  position: absolute;
+  top: 5vmin;
+  font-size: 18px;
+}
+
+.cover {
+  position: absolute;
+  height: 0;
+  width: 0;
+  border-bottom: 15vmin solid #eaa0b4;
+  border-left: 24vmin solid transparent;
+  border-right: 24vmin solid transparent;
+  top: 15vmin;
+  z-index: 3;
+}
+
+.cover::after {
+  /*left triangle*/
+  position: absolute;
+  content: "";
+  border-left: 24.5vmin solid #fcbbcc;
+  border-bottom: 15vmin solid transparent;
+  border-top: 15vmin solid transparent;
+  top: -15vmin;
+  left: -24vmin;
+}
+
+.cover::before {
+  position: absolute;
+  content: "";
+  border-right: 24.5vmin solid #fcbbcc;
+  border-bottom: 15vmin solid transparent;
+  border-top: 15vmin solid transparent;
+  top: -15vmin;
+  left: -0.5vmin;
+}
+
+.lid {
+  position: absolute;
+  height: 0;
+  width: 0;
+  border-top: 15vmin solid #eaa0b4;
+  border-left: 24vmin solid transparent;
+  border-right: 24vmin solid transparent;
+  top: 0;
+  transform-origin: top;
+  animation: open-rev 2s;
+}
+
+.container-2:hover .lid {
+  animation: open 0.5s;
+  animation-fill-mode: forwards;
+}
+
+.container-2:hover .card {
+  animation: slide 0.2s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+.shadow {
+  position: relative;
+  top: 3vmin;
+  border-radius: 50%;
+  opacity: 0.7;
+  height: 2vmin;
+  width: 48vmin;
+  background: #c0a4ad;
+}
+
+.heart {
+  position: relative;
+  width: 5vmin;
+  height: 4vmin;
+  top: 7vmin;
+  left: -1vmin;
+}
+
+.heart:before,
+.heart:after {
+  position: absolute;
+  content: "";
+  left: 2.5vmin;
+  top: 7vim;
+  width: 2.5vmin;
+  height: 4vmin;
+  background: #ef285d;
+  border-radius: 2.5vmin 2.5vmin 0 0;
+  transform: rotate(-45deg);
+  transform-origin: 0 100%;
+}
+
+.heart:after {
+  left: 0;
+  transform: rotate(45deg);
+  transform-origin: 100% 100%;
+}
+
+@keyframes open {
+  100% {
+    transform: rotatex(180deg);
+  }
+}
+@keyframes slide {
+  100% {
+    transform: translatey(-15vmin);
+    z-index: 2;
+  }
+}
+@keyframes open-rev {
+  from {
+    transform: rotatex(-180deg);
+  }
+}
+@keyframes slide-rev {
+  from {
+    transform: translatey(-15vmin);
+  }
+}
+
+.sticker-love {
+  height: 30vh;
+  padding-bottom: 80px;
+}
+
+.result-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;  
+  height: 95vh; 
+}
+
+
+.text {
+  font-weight: 700;
+  margin: 0;
+  text-align: center;
+  font-size: 40px;
+  color: #3f3136;
+}
+
+
+
+@media (max-width: 568px) {
+  .sticker-love {
+    height: 30vh;
+  }
+  .sticker-waiting {
+    padding-bottom: 10px;
+    height: 20vh;
+  }
+
+  body, html {
+    height: 100vh;
+    margin: 0;
+  }
+
+  .main-text {
+    text-shadow: 1px 1px 0 rgba(25, 10, 16, 0.5);
+  }
+
+  .text {
+    font-weight: 700;
+    margin: 0;
+    text-align: center;
+    font-size: 35px;
+    text-shadow: 1px 1px 0 rgba(42, 5, 20, 0.5);
+  }
+  body {
+    background-image: url(back5.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Nunito';
+    text-align: center;
+    height: 95vh;
+  }
+
+  button {
+    font-family: 'Nunito';
+    font-weight: 400;
+    padding: 10px 20px; 
+    font-size: 30px;
+    color: #fff1f1;
+    box-shadow: 1px 2px rgb(74, 67, 67);
+    margin: 20px 20px 0 20px;
+    border: none;
+    border-radius: 10vh;
+    display: inline-block; 
+    width: max-content !important; 
+  }
+  
+  #yesButton1, #yesButton2 {
+    background-color: rgb(255 185 185);
+    color: #fff1f1;
+  }
+  
+  #yesButton1:hover, #yesButton2:hover {
+    color: rgb(225, 208, 215);;
+    background-color: #9d5f5e;
+    transition: 0.5s;
+  }
+  
+  #noButton {
+    background-color: #a79397; 
+    visibility: visible; 
+  }
+  
+  #noButton:hover {
+    background-color: rgb(146, 133, 136);
+    color: rgb(43, 21, 28);
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+}
+
+
