@@ -1,0 +1,137 @@
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 800;
+  src: url('https://fonts.googleapis.com/css2?family=Nunito:wght@800&display=swap');
+}
+
+body {
+  background-image: url(background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: 'Nunito', sans-serif;
+  text-align: center;
+}
+
+.container {
+  align-items: center;
+  justify-content: center;
+  height: 20vh; 
+}
+
+button {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
+  padding: 10px 20px; 
+  font-size: 30px;
+  color: #de5476;
+  margin: 20px;
+  border: none;
+  border-radius: 10vh;
+  display: inline-block; 
+  width: max-content !important; 
+}
+
+#yesButton1, #yesButton2 {
+  background-color: rgb(254 218 232);
+}
+
+#yesButton1:hover, #yesButton2:hover {
+  color: rgb(254 218 232);;
+  background-color: #de5476;
+  transition: 0.5s;
+}
+
+#noButton {
+  background-color: #a79397; 
+  visibility: visible; 
+}
+
+#noButton:hover {
+  background-color: rgb(218 78 113);
+  color: rgb(43, 21, 28);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.sticker-waiting {
+  height: 30vh;
+}
+
+.sticker-love {
+  height: 50vh;
+}
+
+.main-text {
+  font-weight: 700;
+  margin: 0;
+  text-align: center;
+  font-size: 38px;
+  background: linear-gradient(135deg, #fdcfe1, #e9dde1, #baa2ab);
+  -webkit-background-clip: text; 
+  -webkit-text-fill-color: transparent;
+  text-shadow: 1px 1px 0 rgba(236, 51, 122, 0.5);
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.result-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;  
+  height: 85vh; 
+}
+
+.waiting-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;  
+  height: 85vh; 
+}
+
+.text {
+  font-weight: 700;
+  margin: 0;
+  text-align: center;
+  font-size: 40px;
+  background: linear-gradient(135deg, #f7c1d5, #fdcfe1);
+  -webkit-background-clip: text; 
+  -webkit-text-fill-color: transparent;
+  text-shadow: 1px 1px 0 rgba(236, 51, 122, 0.5);
+  padding-top: 100px;
+}
+
+
+@media (max-width: 768px) {
+  .sticker-love {
+    height: 30vh;
+  }
+  .sticker-waiting {
+    padding-bottom: 10px;
+    height: 20vh;
+  }
+
+  body, html {
+    height: 100%;
+    margin: 0;
+  }
+
+  .main-text {
+    text-shadow: 1px 1px 0 rgba(25, 10, 16, 0.5);
+  }
+
+  .waiting-block {
+    padding-top: 30px;
+  }
+
+  .text {
+    font-weight: 700;
+    margin: 0;
+    text-align: center;
+    font-size: 40px;
+    /* -webkit-text-fill-color: transparent; */
+    text-shadow: 1px 1px 0 rgba(42, 5, 20, 0.5);
+    padding-top: 150px;
+  }
+}
