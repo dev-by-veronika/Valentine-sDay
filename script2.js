@@ -1,3 +1,4 @@
 document.querySelector('.container-2').addEventListener('click', function() {
-  this.classList.toggle('.card');
+  document.querySelector('.lid').classList.toggle('opened');
+  document.querySelector('.card').classList.toggle('slide');
 });
