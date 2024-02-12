@@ -2,14 +2,14 @@
   font-family: 'Nunito';
   font-style: normal;
   font-weight: 800;
-  src: url('https://fonts.googleapis.com/css2?family=Nunito:wght@800&display=swap');
+  src: url(font/Nunito-Bold-700.ttf);
 }
 
 body {
   background-image: url(background.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Nunito';
   text-align: center;
 }
 
@@ -20,7 +20,7 @@ body {
 }
 
 button {
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Nunito';
   font-weight: 400;
   padding: 10px 20px; 
   font-size: 30px;
@@ -66,10 +66,7 @@ button {
   margin: 0;
   text-align: center;
   font-size: 38px;
-  background: linear-gradient(135deg, #fdcfe1, #e9dde1, #baa2ab);
-  -webkit-background-clip: text; 
-  -webkit-text-fill-color: transparent;
-  text-shadow: 1px 1px 0 rgba(236, 51, 122, 0.5);
+  color: #45363b;
   padding-top: 10px;
   padding-bottom: 10px;
 }
@@ -79,7 +76,7 @@ button {
   flex-direction: column;
   justify-content: center; 
   align-items: center;  
-  height: 85vh; 
+  height: 100vh; 
 }
 
 .waiting-block {
@@ -87,7 +84,7 @@ button {
   flex-direction: column;
   justify-content: center; 
   align-items: center;  
-  height: 85vh; 
+  height: 100vh; 
 }
 
 .text {
@@ -95,15 +92,15 @@ button {
   margin: 0;
   text-align: center;
   font-size: 40px;
-  background: linear-gradient(135deg, #f7c1d5, #fdcfe1);
+  color: #3f3136;
+  /* background: linear-gradient(135deg, #f7c1d5, #fdcfe1);
   -webkit-background-clip: text; 
   -webkit-text-fill-color: transparent;
-  text-shadow: 1px 1px 0 rgba(236, 51, 122, 0.5);
-  padding-top: 100px;
+  text-shadow: 1px 1px 0 rgba(236, 51, 122, 0.5); */
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 568px) {
   .sticker-love {
     height: 30vh;
   }
@@ -121,17 +118,11 @@ button {
     text-shadow: 1px 1px 0 rgba(25, 10, 16, 0.5);
   }
 
-  .waiting-block {
-    padding-top: 30px;
-  }
-
   .text {
     font-weight: 700;
     margin: 0;
     text-align: center;
     font-size: 40px;
-    /* -webkit-text-fill-color: transparent; */
     text-shadow: 1px 1px 0 rgba(42, 5, 20, 0.5);
-    padding-top: 150px;
   }
 }
