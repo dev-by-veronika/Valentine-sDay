@@ -126,4 +126,49 @@ button {
     font-size: 40px;
     text-shadow: 1px 1px 0 rgba(42, 5, 20, 0.5);
   }
+  body {
+    background-image: url(back5.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Nunito';
+    text-align: center;
+    height: 95vh;
+  }
+
+  button {
+    font-family: 'Nunito';
+    font-weight: 400;
+    padding: 10px 20px; 
+    font-size: 30px;
+    color: #fff1f1;
+    box-shadow: 1px 2px rgb(74, 67, 67);
+    margin: 20px 20px 0 20px;
+    border: none;
+    border-radius: 10vh;
+    display: inline-block; 
+    width: max-content !important; 
+  }
+  
+  #yesButton1, #yesButton2 {
+    background-color: rgb(255 185 185);
+    color: #fff1f1;
+  }
+  
+  #yesButton1:hover, #yesButton2:hover {
+    color: rgb(225, 208, 215);;
+    background-color: #9d5f5e;
+    transition: 0.5s;
+  }
+  
+  #noButton {
+    background-color: #a79397; 
+    visibility: visible; 
+  }
+  
+  #noButton:hover {
+    background-color: rgb(146, 133, 136);
+    color: rgb(43, 21, 28);
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
 }
